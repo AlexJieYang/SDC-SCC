@@ -1,0 +1,34 @@
+{
+  "scientists": {
+    "required_columns": [
+      "au",
+      "type",
+      "pub_num",
+      "tc",
+      "h",
+      "g",
+      "DC",
+      "CC",
+      "dh",
+      "ch"
+    ],
+    "description": "One row per scientist; type is laureate or non laureate. IR/correlation additionally require TCD, TC, TD, CitCDP."
+  },
+  "laureates": {
+    "required_columns": [
+      "au"
+    ],
+    "description": "Laureate lookup table (CSV or Excel); au values match scientists."
+  },
+  "careers": {
+    "required_columns": [
+      "au",
+      "type",
+      "DC",
+      "pub",
+      "DClst",
+      "CClst"
+    ],
+    "description": "Scientist career table. pub, DClst, CClst are literal lists; DC/CC trajectories have the same length."
+  }
+}
